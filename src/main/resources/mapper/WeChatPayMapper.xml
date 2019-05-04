@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gwd.dao.WeChatPayDao">
+
+
+    <resultMap id="WeChatPayResult" type="WeChatPay">
+        <id column="id" property="id" />
+        <result column="order_id" property="orderId" />
+        <result column="request" property="request"/>
+        <result column="response" property="response"/>
+        <result column="payapi" property="payapi"/>
+        <result column="pay_result" property="payResult"/>
+    </resultMap>
+
+    <!--   WeChatPay getByOrderId(Integer orderId);-->
+    <select id="getByOrderId" resultMap="WeChatPayResult">
+        select *from we_chat_pay where order_id = #{orderId}
+    </select>
+
+    <!-- void updatePayResult(Integer orderId,String payResult);-->
+    <update id="updatePayResult">
+        update we_chat_pay set pay_result = #{payResult} where order_id = #{orderId}
+    </update>
+
+    <!--void updatePayReturnCode(@Param("orderId") Integer orderId,@Param("ReturnCode") String returnCode);-->
+    <update id="updatePayReturnCode">
+        update we_chat_pay set return_code = #{returnCode} where order_id = #{orderId}
+    </update>
+
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gwd.dao.PropertyDao">
+
+    <!--
+    private Integer id;
+    private String typePaper;
+    private boolean hascolor;
+    private boolean hasdouble;
+    private double price;-->
+
+    <resultMap id="resultProperty" type="Property">
+        <id column="id" property="id" />
+        <result column="type_paper" property="typePaper" javaType="String"/>
+        <result column="hascolor" property="hascolor"/>
+        <result column="hasdouble" property="hasdouble"/>
+        <result column="price" property="price"/>
+    </resultMap>
+
+    <!--    Price get(Price property);-->
+    <select id="get" resultMap="resultProperty">
+        select *from property where type_paper = #{property.typePaper} and hascolor = #{property.hascolor} and hasdouble = #{property.hasdouble}
+    </select>
+
+</mapper>

@@ -1,0 +1,82 @@
+.bodybg{
+    width: 100%;
+    height: 100%;
+    background-image: url(border4.jpg);
+    background-repeat: no-repeat;
+}
+
+.bg{
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: 96%;
+    height: 90%;
+}
+
+.formcss{
+    margin: 12% 4.5% 5% 4.5%;
+    position: absolute;
+    width: 90%;
+    height: 85%;
+
+}
+
+.inputcss{
+    margin-top: 10%;
+    margin-left: 21%;
+    width: 80%;
+    padding: 20px;
+}
+.fileFont{
+    font-size: 25px;
+    padding: 15px;
+    font-family: "幼圆";
+}
+
+.btncss{
+    margin-top: 10%;
+    margin-left: 13%;
+    width: 80%;
+    padding: 20px;
+}
+
+.up{
+    font-size: 26px;
+    padding: 10px;
+    width: 30%;
+    margin-left: 7%;
+    font-family: "幼圆";
+    background-color: white;
+}
+.up:hover{
+    background-color: #60caf6;
+}
+.pre{
+    font-size: 26px;
+    margin-left: 19%;
+    padding: 10px;
+    width: 30%;
+    font-family: "幼圆";
+}
+
+.pre:hover{
+    background-color: #60caf6;
+}
+
+.backbtncss{
+    margin-top: 10%;
+    margin-left: 21%;
+    width: 60%;
+    padding: 20px;
+}
+.back{
+    font-size: 26px;
+    padding: 10px;
+    width: 100%;
+    margin-left: 2%;
+    font-family: "幼圆";
+    background-color: white;
+}
+.back:hover{
+    background-color: #60caf6;
+}

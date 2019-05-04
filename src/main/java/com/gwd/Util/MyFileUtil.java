@@ -14,7 +14,7 @@ public class MyFileUtil {
     /*本地部署时改到服务器路径*/
     //static final String filePath = "D:\\打印项目\\";
 
-    public static final String filePath = "//home//print//upload//" ; //服务器上的路径
+     public static final String filePath = "//home//print//upload//" ; //服务器上的路径
 
 
 

@@ -1,0 +1,37 @@
+body {
+	padding: 10px;
+	height: 101%;
+	background: #f6f4f7;
+}
+.upload-button-contain {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	width: 360px;
+	height: 360px;
+	margin: 300px 0;
+	border-radius: 21px;
+	border: 2px solid #f6f4f7;
+	background: #fefefe;
+	box-shadow: 5px 5px 15px #666666;
+}
+.upload-button-contain img {
+	width: 150px;
+	height: 150px;
+	padding: 40px 105px 0 105px;
+}
+.upload-button-label {
+	font-size: 40px;
+	width: 360px;
+	line-height: 100px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+input {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	opacity: 0;
+	-ms-filter: 'alpha(opacity=0)';
+	font-size: 600px;
+}

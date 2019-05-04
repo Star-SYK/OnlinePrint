@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gwd.dao.UserDao">
+
+    <!--    Integer getUserIdByOpenId(String openId);-->
+    <select id="getUserIdByOpenId" resultType="Integer">
+        select id from user where open_id = #{openId}
+    </select>
+
+    <!--Integer getUserIdByToken(String token);-->
+    <select id="getUserIdByToken" resultType="Integer">
+        select id from user where token = #{token}
+    </select>
+
+    <!--        String getOpenIdByUserId(Integer userId);-->
+    <select id="getOpenIdByUserId" resultType="String">
+        select open_id from user where id = #{id}
+    </select>
+
+
+</mapper>
