@@ -4,7 +4,13 @@ package com.gwd.Util;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */
 public class CookieUtil {
 
 

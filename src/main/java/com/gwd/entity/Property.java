@@ -1,5 +1,11 @@
 package com.gwd.entity;
-
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */
 public class Property {
 
     private Integer id;

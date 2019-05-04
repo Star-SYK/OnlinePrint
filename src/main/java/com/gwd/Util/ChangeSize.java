@@ -1,7 +1,13 @@
 package com.gwd.Util;
 
 import java.text.DecimalFormat;
-
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */
 public class ChangeSize {
 
     public static String fileSizeConver(long fileS)

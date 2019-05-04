@@ -8,7 +8,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */
 public class IOUtil {
 
     // 通过request请求获取json数据

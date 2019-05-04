@@ -12,7 +12,13 @@ import org.springframework.web.bind.annotation.*;
 import com.gwd.service.UserService;
 import java.io.IOException;
 import java.util.Date;
-
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */
 @RequestMapping(value = "/user" , method = RequestMethod.POST)
 @RestController
 public class UserController {

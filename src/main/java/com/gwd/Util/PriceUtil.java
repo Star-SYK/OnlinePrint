@@ -1,6 +1,12 @@
 package com.gwd.Util;
 
-
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */
 public class PriceUtil {
 
     /*(int)((PriceUtil.CalculatePrice(property.getPrice(),orderInfo.getPageNum(),orderInfo.getNum())+0.005)*100)*/

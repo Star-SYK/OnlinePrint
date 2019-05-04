@@ -2,7 +2,13 @@ package com.gwd.Util;
 
 
 import java.io.*;
-
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */
 public class CmdUtil {
 
     //  String str = "unoconv -f pdf /home/print/upload/1 /home/print/pdf/1";

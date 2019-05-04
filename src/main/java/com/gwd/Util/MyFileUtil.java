@@ -6,9 +6,15 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URL;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
+
+/** 
+* @Description: OnlinePrint 
+* @Param:  
+* @return:  
+* @Author: ChenYu
+* @Date: 2019/5/4 
+*/
 public class MyFileUtil {
 
     /*本地部署时改到服务器路径*/

@@ -6,7 +6,13 @@ import com.gwd.service.CollegeService;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
-
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */
 @Service("collegeService")
 public class CollegeServiceImpl implements CollegeService {
 

@@ -12,7 +12,13 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */
 @RequestMapping
 //@RequestMapping(value = "/file" , method = RequestMethod.POST)
 @RestController
@@ -63,6 +69,22 @@ public class FileController {
                 responseData.setData(file);
             }
         }
+        return responseData;
+    }
+
+
+
+    @Transactional
+    @RequestMapping("/get/last/file")
+    public ResponseData getLastFile(HttpServletRequest request){
+        ResponseData responseData = new ResponseData();
+        Integer userId = userService.hasLogin(request);
+        if(userId == null){
+            responseData.setStatusOther("请先登录");
+            return responseData;
+        }
+        File file = fileService.getLastFileByIdAndUserId(userId);
+        responseData.setData(file);
         return responseData;
     }
 

@@ -6,7 +6,13 @@ import com.gwd.service.WeChatPayService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */
 @Service("weChatPayService")
 public class WeChatPayServiceImpl implements WeChatPayService {
 

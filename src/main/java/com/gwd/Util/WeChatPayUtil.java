@@ -6,7 +6,13 @@ import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */
 public class WeChatPayUtil {
 
     public static final String url = "https://api.mch.weixin.qq.com/pay/unifiedorder";

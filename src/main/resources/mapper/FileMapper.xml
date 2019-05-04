@@ -7,4 +7,10 @@
         select * from file where id = #{id} and user_id = #{userId}
     </select>
 
+    <select id="getLastFileByIdAndUserId" resultType="File">
+        select * from file where user_id = #{userId} order by id desc limit 1
+    </select>
+
+
+
 </mapper>

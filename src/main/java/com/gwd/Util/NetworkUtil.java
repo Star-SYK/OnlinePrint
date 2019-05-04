@@ -2,7 +2,13 @@ package com.gwd.Util;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Enumeration;
-
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */
 public class NetworkUtil {
 
     public static String getIpAddress(HttpServletRequest request) {

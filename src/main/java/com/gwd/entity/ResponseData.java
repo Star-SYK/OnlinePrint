@@ -1,7 +1,13 @@
 package com.gwd.entity;
 
 import java.io.Serializable;
-
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */
 public class ResponseData implements Serializable {
 
 

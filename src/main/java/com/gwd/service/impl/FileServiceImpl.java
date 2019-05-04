@@ -6,6 +6,7 @@ import com.gwd.Util.MyFileUtil;
 import com.gwd.dao.FileDao;
 import com.gwd.entity.File;
 import com.gwd.service.FileService;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -15,7 +16,13 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */
 @Service("fileService")
 public class FileServiceImpl implements FileService {
 
@@ -77,4 +84,11 @@ public class FileServiceImpl implements FileService {
     public File getByIdAndUserId(Integer id, Integer userId) {
         return fileDao.getByIdAndUserId(id, userId);
     }
+
+    @Override
+    public File getLastFileByIdAndUserId(Integer userId) {
+        return fileDao.getLastFileByIdAndUserId(userId);
+    }
+
+
 }

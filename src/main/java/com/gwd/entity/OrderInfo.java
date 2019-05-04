@@ -1,8 +1,13 @@
 package com.gwd.entity;
 
 import java.util.Date;
-
-public class OrderInfo {
+/**
+ * @Description: OnlinePrint
+ * @Param:
+ * @return:
+ * @Author: ChenYu
+ * @Date: 2019/5/4
+ */public class OrderInfo {
     private Integer id;
     private Integer fileId;
     private Integer userId;
