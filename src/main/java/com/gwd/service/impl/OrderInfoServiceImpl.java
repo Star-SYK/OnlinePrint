@@ -52,4 +52,9 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         orderInfoDao.updateHasPay(id);
     }
 
+    @Override
+    public void updateHasReceipt(Integer id) {
+        orderInfoDao.updateHasAccomplish(id);
+    }
+
 }

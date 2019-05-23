@@ -4,10 +4,13 @@
 
     <!--    void updateHasPay(Integer id);-->
     <update id="updateHasPay">
-        update order_info set haspay = true where id = #{id}
+        update order_info set has_pay = true where id = #{id}
     </update>
     <update id="updateHasAccomplish">
           update order_info set accomplish = true where id = #{id}
+    </update>
+    <update id="updateHasReceipt">
+         update order_info set has_receipt = true where id = #{id}
     </update>
 
 </mapper>

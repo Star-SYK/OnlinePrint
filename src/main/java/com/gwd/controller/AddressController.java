@@ -1,4 +1,5 @@
 package com.gwd.controller;
+import com.gwd.dao.AddressDao;
 import com.gwd.entity.Address;
 import com.gwd.entity.ResponseData;
 import com.gwd.service.AddressService;
@@ -21,6 +22,10 @@ public class AddressController {
 
     @Resource
     private AddressService addressService;
+
+
+    @Resource
+    private AddressDao addressDao;
 
     @Resource
     private UserService userService;
@@ -51,6 +56,20 @@ public class AddressController {
         addressService.add(newAddress);
         return responseData;
     }
+
+
+    @RequestMapping(value = "/del/{addressId}")
+    public ResponseData del(@PathVariable("addressId")Integer addressId,  HttpServletRequest request){
+        ResponseData  responseData  =  new ResponseData();
+        Integer userId = userService.hasLogin(request);
+        if(userId == null){
+            responseData.setStatusOther("请先登录");
+            return responseData;
+        }
+        addressDao.deleteById(addressId);
+        return responseData;
+    }
+
 
 
     @RequestMapping(value = "/get/default")

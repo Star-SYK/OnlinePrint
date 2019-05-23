@@ -25,23 +25,13 @@ import java.util.Date;
     private Date createTime;
     private Double price;
     private boolean accomplish;
-    private boolean haspay;
+    private boolean hasPay;
+    private Integer priority;
+    private String bind;
+    private boolean hasReceipt;
 
-    public Integer getFileId() {
-        return fileId;
-    }
 
-    public void setFileId(Integer fileId) {
-        this.fileId = fileId;
-    }
 
-    public boolean isHaspay() {
-        return haspay;
-    }
-
-    public void setHaspay(boolean haspay) {
-        this.haspay = haspay;
-    }
 
     @Override
     public String toString() {
@@ -63,24 +53,11 @@ import java.util.Date;
                 ", createTime=" + createTime +
                 ", price=" + price +
                 ", accomplish=" + accomplish +
-                ", haspay=" + haspay +
+                ", hasPay=" + hasPay +
+                ", priority=" + priority +
+                ", bind='" + bind + '\'' +
+                ", hasReceipt=" + hasReceipt +
                 '}';
-    }
-
-    public boolean isAccomplish() {
-        return accomplish;
-    }
-
-    public void setAccomplish(boolean accomplish) {
-        this.accomplish = accomplish;
-    }
-
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer userId) {
-        this.userId = userId;
     }
 
     public Integer getId() {
@@ -89,6 +66,22 @@ import java.util.Date;
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getFileId() {
+        return fileId;
+    }
+
+    public void setFileId(Integer fileId) {
+        this.fileId = fileId;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public String getName() {
@@ -195,5 +188,43 @@ import java.util.Date;
         this.price = price;
     }
 
+    public boolean isAccomplish() {
+        return accomplish;
+    }
 
+    public void setAccomplish(boolean accomplish) {
+        this.accomplish = accomplish;
+    }
+
+    public boolean isHasPay() {
+        return hasPay;
+    }
+
+    public void setHasPay(boolean hasPay) {
+        this.hasPay = hasPay;
+    }
+
+    public Integer getPriority() {
+        return priority;
+    }
+
+    public void setPriority(Integer priority) {
+        this.priority = priority;
+    }
+
+    public String getBind() {
+        return bind;
+    }
+
+    public void setBind(String bind) {
+        this.bind = bind;
+    }
+
+    public boolean isHasReceipt() {
+        return hasReceipt;
+    }
+
+    public void setHasReceipt(boolean hasReceipt) {
+        this.hasReceipt = hasReceipt;
+    }
 }

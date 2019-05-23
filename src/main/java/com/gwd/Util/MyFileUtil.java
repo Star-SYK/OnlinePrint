@@ -3,9 +3,13 @@ package com.gwd.Util;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URL;
+import java.net.URLEncoder;
 
 
 /** 
@@ -97,6 +101,22 @@ public class MyFileUtil {
         }
     }
 
+
+    public static void download(HttpServletRequest request, HttpServletResponse response,String path,String fileName)
+            throws ServletException, IOException {
+        response.setCharacterEncoding("utf-8");
+        File filename = new File(path);
+        response.setContentType("multipart/form-data");
+        response.setHeader("Content-Disposition", "attachment;filename="+URLEncoder.encode(fileName, "utf-8"));
+        OutputStream out = response.getOutputStream();
+        FileInputStream fileinput = new FileInputStream(filename);
+        byte[] charbuffer = new byte[1024];
+        int length = 0;
+        while ((length=fileinput.read(charbuffer))!=-1) {
+            out.write(charbuffer, 0, length);
+        }
+
+    }
 
 
 

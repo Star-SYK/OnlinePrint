@@ -60,8 +60,10 @@ public class WeChatPayController {
             return responseData;
         }
         if(weChatPayService.getByOrderId(orderId) != null){
-            responseData.setStatusOther("该订单已经下过单请勿重复下单");
-            return responseData;
+            if(orderInfoService.getById(orderId).isHasPay()){
+                responseData.setStatusOther("该订单已经付过款了");
+                return responseData;
+            }
         }
 
 
@@ -172,6 +174,7 @@ public class WeChatPayController {
             }
 
         } catch (Exception e) {
+            orderInfoService.updateHasPay(orderId);  // 更新支付状态
             System.out.println(e.getMessage());
         }
         //如果失败返回错误，微信会再次发送支付信息

@@ -16,4 +16,5 @@ public interface OrderInfoService {
     List<OrderInfo> list(Integer userId,Integer page);
     List<OrderInfo> listAccomplish(Integer userId,Integer page,boolean isAccomplish);
     void updateHasPay(Integer id);
+    void updateHasReceipt(Integer id);
 }
