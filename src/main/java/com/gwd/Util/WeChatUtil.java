@@ -52,6 +52,7 @@ public class WeChatUtil {
                 lines = new String(lines.getBytes(), "utf-8");
                 response += lines;
             }
+            System.out.println(lines);
             reader.close();
        //     System.out.println(response);
         } catch (Exception e) {

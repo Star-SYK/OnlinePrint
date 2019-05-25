@@ -9,7 +9,6 @@ import org.apache.ibatis.annotations.Param;
  * @return:
  * @Author: ChenYu
  * @Date: 2019/5/4
- * @Date: 2019/5/4
  */
 public interface FileDao extends BaseMapper<File> {
     File getByIdAndUserId(@Param("id")Integer id,@Param("userId")Integer userId);

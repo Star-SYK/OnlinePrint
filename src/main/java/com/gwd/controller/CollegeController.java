@@ -1,4 +1,4 @@
-﻿package com.gwd.controller;
+package com.gwd.controller;
 
 import com.gwd.entity.ResponseData;
 import com.gwd.service.CollegeService;
@@ -17,7 +17,6 @@ import java.io.IOException;
  * @return:
  * @Author: ChenYu
  * @Date: 2019/5/4
- * @Date: 2019/5/4
  */
 @RequestMapping(value = "/college" , method = RequestMethod.POST)
 @RestController
@@ -29,7 +28,7 @@ public class CollegeController {
     @Resource
     private UserService userService;
 
-    @RequestMapping("/list")
+    @RequestMapping("/get/list")
     public ResponseData get(HttpServletRequest request) throws IOException {
         ResponseData responseData = new ResponseData();
         if(userService.hasLogin(request) == null){

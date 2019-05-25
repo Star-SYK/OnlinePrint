@@ -15,7 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 public class ViewController {
 
-    @RequestMapping("/{viewName}")
+    @RequestMapping("/link/{viewName}")
     public ModelAndView hello(@PathVariable("viewName") String viewName) {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName(viewName);
